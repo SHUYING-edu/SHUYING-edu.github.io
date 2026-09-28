@@ -31,16 +31,11 @@
   --serif:"Songti SC",SimSun,"宋体","Noto Serif CJK SC","Source Han Serif SC",serif;
   --sans:"Songti SC",SimSun,"宋体","Noto Serif CJK SC","Source Han Serif SC",serif;
   --mono:"Microsoft YaHei","微软雅黑","PingFang SC","Hiragino Sans GB","Heiti SC",sans-serif;
-  --kai:"Kaiti SC",KaiTi,"楷体",STKaiti,serif;
 }
-/* Kaiti in its traditional role: the pull-quote, not the running text */
-:root[data-lang="zh"] .thesis{font-family:var(--kai); letter-spacing:.02em}
 :root[data-lang="zh"] body{font-size:16px; line-height:1.85}
 :root[data-lang="zh"] .entry h3{font-size:17px}
 :root[data-lang="zh"] .pub .cite{font-size:15.5px; line-height:1.75}
 :root[data-lang="zh"] .conf .ttl{font-size:15.5px; line-height:1.7}
-:root[data-lang="zh"] .thesis{font-size:16.5px; font-style:normal}
-:root[data-lang="zh"] .role{font-size:17px}
 :root[data-lang="zh"] .lede{font-size:16px}
 :root[data-lang="zh"] .detail, :root[data-lang="zh"] ul.bul li{font-size:14.5px}
 
@@ -150,20 +145,6 @@ header.hero{padding:76px 0 56px}
   font-family:var(--serif); font-weight:400; font-size:clamp(46px,7.5vw,78px);
   line-height:1.02; letter-spacing:-.02em; margin:0; text-wrap:balance;
 }
-.role{
-  font-size:19px; color:var(--muted); margin:22px 0 0; max-width:34em;
-}
-.role strong{color:var(--ink); font-weight:700}
-.thesis{
-  margin:30px 0 0; padding:18px 0 18px 22px;
-  border-left:2px solid var(--seal);
-  font-family:var(--serif); font-size:18px; line-height:1.55; font-style:italic;
-  color:var(--ink); max-width:34em;
-}
-.thesis .lbl{
-  display:block; font-family:var(--mono); font-style:normal; font-size:12px;
-  letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:8px;
-}
 .portrait{
   width:100%; aspect-ratio:4/5; object-fit:cover; display:block;
   border-radius:2px; box-shadow:var(--shadow); filter:saturate(.93);
@@ -187,7 +168,7 @@ header.hero{padding:76px 0 56px}
 }
 
 /* ── strands ────────────────────────────────────────────── */
-.strands{display:flex; flex-wrap:wrap; gap:7px; margin-top:26px}
+.strands{display:flex; flex-wrap:wrap; gap:7px; margin-top:30px}
 .strand{
   font-size:13.5px; font-family:var(--mono); letter-spacing:.02em;
   background:var(--chip); color:var(--teal);
@@ -384,10 +365,6 @@ footer{
         Shuying Li
       </h1>
 
-      <p class="role">
-        <span class="en">Researcher of classroom talk. I study how <strong>dialogic teaching</strong> is understood and practised by primary teachers in <strong>England and China</strong> — what teachers believe about talk, what actually happens between them and their pupils, and how curriculum and culture shape the difference.</span>
-        <span class="zh">课堂话语研究者。我关注<strong>对话教学</strong>在<strong>中英两国</strong>小学课堂中的理解与实践——教师如何理解课堂对话，师生之间实际发生了什么，以及课程与文化如何塑造两者之间的差异。</span>
-      </p>
 
       <div class="strands">
         <span class="strand"><span class="en">Dialogic Teaching</span><span class="zh">对话教学</span></span>
@@ -399,11 +376,6 @@ footer{
         <span class="strand"><span class="en">Child-Centred Pedagogy</span><span class="zh">儿童中心教育</span></span>
       </div>
 
-      <p class="thesis">
-        <span class="lbl"><span class="en">Doctoral thesis · Nottingham, 2026</span><span class="zh">博士论文 · 诺丁汉大学，2026</span></span>
-        <span class="en">Dialogic Teaching in Primary Education: A Comparative and Cross-Cultural Analysis of Chinese and British Teachers’ Perceptions and Practices</span>
-        <span class="zh">小学教育中的对话教学：中英教师认知与实践的跨文化比较研究</span>
-      </p>
 
       <div class="contact">
         <a href="mailto:shuying.li@nottingham.ac.uk">shuying.li@nottingham.ac.uk</a>
