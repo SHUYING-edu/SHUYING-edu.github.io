@@ -318,6 +318,15 @@ ul.bul li::before{
 .conf .yr{font-family:var(--mono); font-size:12px; color:var(--faint); margin-top:6px; display:block; letter-spacing:.05em}
 @media (max-width:560px){ .conf{grid-template-columns:1fr; gap:6px} }
 
+.certs{display:flex; flex-direction:column}
+.cert{padding:15px 0; border-bottom:1px solid var(--rule-soft)}
+.cert:first-child{padding-top:0}
+.cert:last-child{border-bottom:0; padding-bottom:0}
+.cert-head{display:flex; gap:18px; align-items:baseline; justify-content:space-between}
+.cert-name{margin:0; font-size:15.5px; color:var(--ink)}
+.cert-grade{font-size:13px; color:var(--faint); white-space:nowrap; flex-shrink:0}
+.cert-body{margin:4px 0 0; font-size:13.5px; color:var(--muted); max-width:68ch}
+
 /* two-col compact lists */
 .cols2{display:grid; grid-template-columns:1fr 1fr; gap:0 44px}
 @media (max-width:700px){ .cols2{grid-template-columns:1fr} }
@@ -915,12 +924,39 @@ footer{
         <h2><span class="en">Certificates</span><span class="zh">证书</span></h2>
         <p class="meta">09</p>
       </div>
-      <div class="cols2">
-        <div class="line"><span><span class="en">Test for English Majors, Band Four</span><span class="zh">英语专业四级考试</span></span><span class="date"><span class="en">Good</span><span class="zh">良好</span></span></div>
-        <div class="line"><span><span class="en">Test for English Majors, Band Eight</span><span class="zh">英语专业八级考试</span></span><span class="date"><span class="en">Good</span><span class="zh">良好</span></span></div>
-        <div class="line"><span><span class="en">Senior School Teacher Qualification of China</span><span class="zh">中国高级中学教师资格证书</span></span><span class="date">—</span></div>
-        <div class="line"><span><span class="en">TESOL Canada Teaching Certificate</span><span class="zh">加拿大 TESOL 教学证书</span></span><span class="date">—</span></div>
-        <div class="line"><span><span class="en">CELTA, Cambridge</span><span class="zh">剑桥 CELTA 英语教学证书</span></span><span class="date">—</span></div>
+      <div class="certs">
+        <div class="cert">
+          <div class="cert-head">
+            <p class="cert-name"><span class="en">Test for English Majors, Band Eight (TEM-8)</span><span class="zh">英语专业八级考试（TEM-8）</span></p>
+          <span class="cert-grade"><span class="en">Good</span><span class="zh">良好</span></span>
+          </div>
+          <p class="cert-body"><span class="en">National Advisory Committee for Foreign Language Teaching, Ministry of Education of the People’s Republic of China</span><span class="zh">中华人民共和国教育部高等学校外语专业教学指导委员会</span></p>
+        </div>
+        <div class="cert">
+          <div class="cert-head">
+            <p class="cert-name"><span class="en">Test for English Majors, Band Four (TEM-4)</span><span class="zh">英语专业四级考试（TEM-4）</span></p>
+          <span class="cert-grade"><span class="en">Good</span><span class="zh">良好</span></span>
+          </div>
+          <p class="cert-body"><span class="en">National Advisory Committee for Foreign Language Teaching, Ministry of Education of the People’s Republic of China</span><span class="zh">中华人民共和国教育部高等学校外语专业教学指导委员会</span></p>
+        </div>
+        <div class="cert">
+          <div class="cert-head">
+            <p class="cert-name"><span class="en">Senior Secondary School Teacher Qualification Certificate</span><span class="zh">高级中学教师资格证书</span></p>
+          </div>
+          <p class="cert-body"><span class="en">Ministry of Education of the People’s Republic of China</span><span class="zh">中华人民共和国教育部</span></p>
+        </div>
+        <div class="cert">
+          <div class="cert-head">
+            <p class="cert-name"><span class="en">Certificate in English Language Teaching to Adults (CELTA)</span><span class="zh">剑桥成人英语教学证书（CELTA）</span></p>
+          </div>
+          <p class="cert-body"><span class="en">Cambridge Assessment English, University of Cambridge</span><span class="zh">剑桥大学英语考评部（Cambridge Assessment English）</span></p>
+        </div>
+        <div class="cert">
+          <div class="cert-head">
+            <p class="cert-name"><span class="en">Teaching English to Speakers of Other Languages (TESOL) Certificate</span><span class="zh">对外英语教学证书（TESOL）</span></p>
+          </div>
+          <p class="cert-body"><span class="en">TESOL Canada Association</span><span class="zh">加拿大 TESOL 协会（TESOL Canada Association）</span></p>
+        </div>
       </div>
     </div>
   </section>
