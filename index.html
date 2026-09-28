@@ -5,17 +5,17 @@
 <style>
 /* ── tokens ─────────────────────────────────────────────── */
 :root{
-  --paper:#F7F8FA;
-  --card:#FFFFFF;
-  --ink:#464B52;
-  --muted:#6E757E;
-  --faint:#99A1AB;
-  --seal:#2B7F9C;
-  --teal:#3F8CA6;
-  --rule:rgba(70,75,82,.13);
-  --rule-soft:rgba(70,75,82,.07);
-  --chip:rgba(43,127,156,.08);
-  --shadow:0 1px 2px rgba(70,75,82,.05), 0 12px 32px -20px rgba(70,75,82,.4);
+  --paper:#F4F1FE;
+  --card:#FBFAFF;
+  --ink:#343948;
+  --muted:#636B61;
+  --faint:#72788D;
+  --seal:#6353C8;
+  --teal:#54649E;
+  --rule:rgba(52,57,72,.14);
+  --rule-soft:rgba(52,57,72,.07);
+  --chip:#E3D7FF;
+  --shadow:0 1px 2px rgba(52,57,72,.06), 0 12px 32px -20px rgba(52,57,72,.45);
 
   --sys:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
   --serif:var(--sys);
@@ -39,31 +39,31 @@
 
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#14181C;
-    --card:#1B2128;
-    --ink:#DDE2E8;
-    --muted:#98A1AC;
-    --faint:#727B86;
-    --seal:#6FC2DD;
-    --teal:#7FC4DC;
-    --rule:rgba(221,226,232,.15);
-    --rule-soft:rgba(221,226,232,.08);
-    --chip:rgba(111,194,221,.12);
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -20px rgba(0,0,0,.9);
+    --paper:#16161F;
+    --card:#1E1E2B;
+    --ink:#E3D7FF;
+    --muted:#9DA2BC;
+    --faint:#72788D;
+    --seal:#AFA2FF;
+    --teal:#7A89C2;
+    --rule:rgba(227,215,255,.16);
+    --rule-soft:rgba(227,215,255,.08);
+    --chip:rgba(175,162,255,.14);
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 12px 32px -20px rgba(0,0,0,.95);
   }
 }
 :root[data-theme="dark"]{
-  --paper:#14181C;
-  --card:#1B2128;
-  --ink:#DDE2E8;
-  --muted:#98A1AC;
-  --faint:#727B86;
-  --seal:#6FC2DD;
-  --teal:#7FC4DC;
-  --rule:rgba(221,226,232,.15);
-  --rule-soft:rgba(221,226,232,.08);
-  --chip:rgba(111,194,221,.12);
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -20px rgba(0,0,0,.9);
+  --paper:#16161F;
+  --card:#1E1E2B;
+  --ink:#E3D7FF;
+  --muted:#9DA2BC;
+  --faint:#72788D;
+  --seal:#AFA2FF;
+  --teal:#7A89C2;
+  --rule:rgba(227,215,255,.16);
+  --rule-soft:rgba(227,215,255,.08);
+  --chip:rgba(175,162,255,.14);
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 12px 32px -20px rgba(0,0,0,.95);
 }
 
 *{box-sizing:border-box}
@@ -166,13 +166,13 @@ header.hero{padding:52px 0 34px}
 .strands{display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 0}
 .strand{
   font-size:13.5px; color:var(--ink);
-  background:var(--card); border:1px solid var(--rule);
+  background:var(--chip); border:1px solid transparent;
   padding:5px 14px; border-radius:999px;
 }
 .callout{
   margin:24px 0 0; padding:16px 20px;
   border-left:3px solid var(--seal); border-radius:0 4px 4px 0;
-  background:var(--card);
+  background:var(--chip);
   font-size:16px; line-height:1.66; color:var(--ink); max-width:66ch;
 }
 
